@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image img {
+    width: 350px;
+}
+
+.image-container p {
+    color: red;
+    font-size: 18px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 40vw; /* Default width */
+    background: rgba(202, 253, 255, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    width: 100%; /* Full width by default */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .input-container {
+        width: 60vw; /* Shorten input field on tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input-container {
+        width: 80vw; /* Further shorten input field on mobile */
+    }
+}
+
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send i {
+    font-size: 18px;
+    color: #00ff00;
+}
+
+.talk i {
+    font-size: 20px;
+    color: #aed0d0;
+}
+
+.content {
+    color: #aed0d0;
+    font-size: 18px;
+    margin-top: 15px;
+}
